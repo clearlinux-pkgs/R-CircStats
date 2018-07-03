@@ -1,6 +1,13 @@
 # This file contains recursive sources that require this package
 R-ade4
+R-adegenet
+R-adegraphics
+R-adephylo
 R-analogue
 R-bipartite
 R-dtw
+R-phangorn
+R-phylobase
+R-seqinr
+R-taxize
 R-vegan
