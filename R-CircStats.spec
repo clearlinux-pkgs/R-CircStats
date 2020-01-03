@@ -4,7 +4,7 @@
 #
 Name     : R-CircStats
 Version  : 0.2.6
-Release  : 25
+Release  : 26
 URL      : https://cran.r-project.org/src/contrib/CircStats_0.2-6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/CircStats_0.2-6.tar.gz
 Summary  : Circular Statistics, from "Topics in Circular Statistics" (2001)
