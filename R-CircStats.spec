@@ -4,37 +4,35 @@
 #
 Name     : R-CircStats
 Version  : 0.2.6
-Release  : 27
+Release  : 28
 URL      : https://cran.r-project.org/src/contrib/CircStats_0.2-6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/CircStats_0.2-6.tar.gz
 Summary  : Circular Statistics, from "Topics in Circular Statistics" (2001)
 Group    : Development/Tools
 License  : GPL-2.0
 BuildRequires : buildreq-R
-BuildRequires : util-linux
 
 %description
-Version 0.2-5 2018/06/30
-This is an R port of CircStats package of Ulric Lund <ulund@calpoly.edu> from
-"Topics in circular Statistics" (2001) S. Rao Jammalamadaka and A. SenGupta, World Scientific.
+(2001) S. Rao Jammalamadaka and A. SenGupta, World Scientific.
 
 %prep
 %setup -q -c -n CircStats
+cd %{_builddir}/CircStats
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571810058
+export SOURCE_DATE_EPOCH=1589516211
 
 %install
-export SOURCE_DATE_EPOCH=1571810058
+export SOURCE_DATE_EPOCH=1589516211
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
