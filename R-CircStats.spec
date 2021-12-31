@@ -4,7 +4,7 @@
 #
 Name     : R-CircStats
 Version  : 0.2.6
-Release  : 41
+Release  : 42
 URL      : https://cran.r-project.org/src/contrib/CircStats_0.2-6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/CircStats_0.2-6.tar.gz
 Summary  : Circular Statistics, from "Topics in Circular Statistics" (2001)
@@ -24,10 +24,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1640907301
+export SOURCE_DATE_EPOCH=1640988672
 
 %install
-export SOURCE_DATE_EPOCH=1640907301
+export SOURCE_DATE_EPOCH=1640988672
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
